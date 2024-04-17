@@ -51,6 +51,8 @@ console.log("4 -", account4);
 account4.displayBalance();
 
 // Constructor - writing on PascalCase
+// When we create this function that will return an object of a certain type, we could say that we are creating a object type "Account", and in this case, the function that create this type of variable is supposed to be named of "class"
+// And the object that return from that class is the "instance of the class"
 function Account(username, accountNumber, initialBalance) {
   this.name = username;
   this.accountNumber = accountNumber;
@@ -65,3 +67,5 @@ function Account(username, accountNumber, initialBalance) {
 const account5 = new Account("Julielson Marciano", "14578-8", 5000);
 console.log("5 -", account5);
 account5.displayBalance();
+
+console.log(account5 instanceof Account); //true
