@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --stopwatch-primary-color: #004e98;
+  --stopwatch-primary-shade: #b4cbe4;
+  --stopwatch-secondary-color: #ff6700;
+  --stopwatch-secondary-shade: #ffe7d6;
+  --stopwatch-light-color: #f1f8f2;
+  --body-background: #efffc2;
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+button {
+  all: unset;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-color: var(--body-background);
+  font-size: 3rem;
+}
+
+#stopwatch-wrapper {
+  background-color: var(--stopwatch-primary-color);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+#timeStopwatch {
+  background-color: black;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 10px;
+}
+
+button {
+  background-color: var(--stopwatch-secondary-color);
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+button.secondary-button {
+  background-color: var(--body-background);
+}
+
+button:hover {
+  background-color: var(--stopwatch-primary-shade);
+}
+button.secondary-button:hover {
+  background-color: var(--stopwatch-secondary-shade);
+  color: var(--stopwatch-secondary-color);
+}
+
+button:focus {
+  border: 3px solid black;
+}
