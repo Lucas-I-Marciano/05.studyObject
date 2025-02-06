@@ -1,4 +1,4 @@
-# Study Objects and Classes in JavaScript
+# Study - Objects and Classes in JavaScript
 
 This project focuses on studying JavaScript objects and classes, including methods that reference object properties, encapsulation techniques, and interaction with HTML pages.
 
